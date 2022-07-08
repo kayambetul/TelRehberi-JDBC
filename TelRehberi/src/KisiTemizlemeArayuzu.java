@@ -120,13 +120,13 @@ public class KisiTemizlemeArayuzu extends JFrame {
 				Kisiler k=(Kisiler) cmbKisiler.getSelectedItem();
 				txtAd.setText(k.getAd());
 				txtSoyad.setText(k.getSoyad());
-//				txtMeslek.setText(k.getMeslek());
-//				txtSehir.setText(k.getSehir());
-//				txtEmail.setText(k.getEmail());
-//				txtEmail2.setText(k.getEmail2());
-//				txtTelefon.setText(k.getTelefon());
-//				txtTelefon2.setText(k.getTelefon2());
-//				
+				txtMeslek.setText(k.getMeslek());
+				txtSehir.setText(k.getSehir());
+				txtEmail.setText(k.getEmail());
+				txtEmail2.setText(k.getEmail2());
+				txtTelefon.setText(k.getTelefon());
+				txtTelefon2.setText(k.getTelefon2());
+				
 				
 			}
 		});
@@ -157,7 +157,7 @@ public class KisiTemizlemeArayuzu extends JFrame {
 				e1.printStackTrace();
 			}
 		
-			
+		
 		}
 	});
         
