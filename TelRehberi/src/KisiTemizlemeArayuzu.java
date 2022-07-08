@@ -120,13 +120,13 @@ public class KisiTemizlemeArayuzu extends JFrame {
 				Kisiler k=(Kisiler) cmbKisiler.getSelectedItem();
 				txtAd.setText(k.getAd());
 				txtSoyad.setText(k.getSoyad());
-				txtMeslek.setText(k.getMeslek());
-				txtSehir.setText(k.getSehir());
-				txtEmail.setText(k.getEmail());
-				txtEmail2.setText(k.getEmail2());
-				txtTelefon.setText(k.getTelefon());
-				txtTelefon2.setText(k.getTelefon2());
-				
+//				txtMeslek.setText(k.getMeslek());
+//				txtSehir.setText(k.getSehir());
+//				txtEmail.setText(k.getEmail());
+//				txtEmail2.setText(k.getEmail2());
+//				txtTelefon.setText(k.getTelefon());
+//				txtTelefon2.setText(k.getTelefon2());
+//				
 				
 			}
 		});
@@ -169,7 +169,7 @@ public class KisiTemizlemeArayuzu extends JFrame {
 		// TODO Auto-generated method stub
 		
 		ArrayList<Kisiler> result = new ArrayList<Kisiler>();
-		String url = "jdbc:postgresql://localhost/Kisilerim?user=postgres&password=12345";
+		String url = "jdbc:postgresql://localhost/Kisiler?user=postgres&password=12345";
 		try {
 			Connection conn = DriverManager.getConnection(url);
 			
@@ -181,12 +181,12 @@ public class KisiTemizlemeArayuzu extends JFrame {
 				k.setId(rs.getInt("id"));
 				k.setAd(rs.getString("ad"));
 				k.setSoyad(rs.getString("soyad"));
-				k.setMeslek(rs.getString("meslek"));
-				k.setSehir(rs.getString("sehir"));
-				k.setEmail(rs.getString("email"));
-				k.setEmail2(rs.getString("email2"));
-				k.setTelefon(rs.getString("telefon"));
-				k.setTelefon2(rs.getString("telefon2"));
+//				k.setMeslek(rs.getString("meslek"));
+//				k.setSehir(rs.getString("sehir"));
+//				k.setEmail(rs.getString("email"));
+//				k.setEmail2(rs.getString("email2"));
+//				k.setTelefon(rs.getString("telefon"));
+//				k.setTelefon2(rs.getString("telefon2"));
 				
 				result.add(k);
 			}
